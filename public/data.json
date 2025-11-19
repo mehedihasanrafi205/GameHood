@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1",
+    "title": "Baldur's Gate 3",
+    "coverPhoto": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1748346026",
+    "category": "RPG",
+    "downloadLink": "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
+    "description": "Baldur's Gate 3 is an epic role-playing game that brings the rich world of Dungeons & Dragons to life with stunning visuals and deep narrative choices. Create your custom character or choose from origin characters with their own unique stories, then embark on a thrilling adventure across the Forgotten Realms. The game features turn-based tactical combat that faithfully recreates D&D 5th Edition rules, allowing for creative problem-solving and strategic battles. Every decision you make influences your relationships with companions, shapes the world around you, and determines the fate of entire civilizations. With branching storylines, romance options, and countless ways to approach challenges through combat, diplomacy, or stealth, no two playthroughs are alike. The game supports both single-player and cooperative multiplayer modes, letting you share your adventure with friends.",
+    "ratings": "4.9",
+    "developer": "Larian Studios"
+  },
+  {
+    "id": "2",
+    "title": "Palworld",
+    "coverPhoto": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2771110/ss_3ea195bfd10dfeb0e27a0419b8bcf95e9564d3a2.1920x1080.jpg?t=1705651206",
+    "category": "Survival",
+    "downloadLink": "https://store.steampowered.com/app/1623730/Palworld/",
+    "description": "Palworld is an innovative multiplayer survival crafting game that combines creature collection with base building and exploration in a vast open world. Players catch and befriend mysterious creatures called Pals, each with unique abilities that can be utilized for various tasks including combat, farming, construction, and manufacturing. Build expansive bases with automated production lines powered by your Pals, explore dangerous dungeons filled with rare resources and powerful bosses, and engage in intense battles against poachers and wildlife. The game features both peaceful farming simulation elements and intense survival mechanics where you must manage hunger, temperature, and stamina. Play solo or team up with friends in online cooperative multiplayer to build thriving civilizations. With its unique blend of creature collecting, factory automation, and survival gameplay, Palworld offers hundreds of hours of engaging content as you discover new Pals, unlock advanced technologies, and conquer the wilderness.",
+    "ratings": "4.3",
+    "developer": "Pocketpair"
+  },
+  {
+    "id": "3",
+    "title": "Elden Ring",
+    "coverPhoto": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1748630546",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    "description": "Elden Ring is a groundbreaking action RPG created by FromSoftware in collaboration with renowned fantasy author George R.R. Martin, who crafted the game's mythology and lore. Set in the vast and mysterious Lands Between, players assume the role of a Tarnished warrior seeking to restore the shattered Elden Ring and become the Elden Lord. The game features an enormous open world filled with diverse landscapes including sprawling plains, treacherous swamps, majestic castles, and underground cities, all connected seamlessly for exploration on foot or horseback. Combat is challenging and rewarding, requiring precise timing, strategic positioning, and mastery of various weapons, magic spells, and special abilities. Face off against memorable bosses, each with unique attack patterns and epic designs. The game offers tremendous build variety with dozens of weapon types, sorceries, incantations, and customizable summons. With its rich storytelling, atmospheric world design, and unforgiving yet fair difficulty, Elden Ring delivers an unforgettable adventure that has captivated millions of players worldwide.",
+    "ratings": "4.7",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "4",
+    "title": "Helldivers 2",
+    "coverPhoto": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/68153c9e42e78199266ac9fcefa9104065f39c07/capsule_616x353.jpg?t=1757033568",
+    "category": "Shooter",
+    "downloadLink": "https://store.steampowered.com/app/553850/HELLDIVERS_2/",
+    "description": "Helldivers 2 is an intense cooperative third-person shooter that drops you into the boots of elite soldiers fighting to spread managed democracy across a hostile galaxy. Team up with up to three friends to complete dangerous missions on alien worlds, battling swarms of giant insects and rogue automaton forces. The game features a unique friendly fire system that keeps combat tense and communication crucial, as one wrong shot can take down your entire squad. Call in devastating stratagems including orbital strikes, supply drops, defensive turrets, and powerful vehicles to turn the tide of battle. Each mission is procedurally generated with dynamic objectives, ensuring fresh challenges every time you deploy. Coordinate loadouts with your team, choosing from a vast arsenal of primary weapons, support weapons, armor types, and tactical equipment. Progress through the ongoing galactic war by liberating planets and sectors, with the entire player community working together to achieve major objectives. With its emphasis on teamwork, chaotic combat scenarios, and satisfying gunplay, Helldivers 2 delivers endless hours of explosive cooperative action.",
+    "ratings": "4.6",
+    "developer": "Arrowhead Game Studios"
+  },
+  {
+    "id": "5",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/capsule_616x353.jpg?t=1749053861",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "Counter-Strike 2 represents the next evolution of the legendary tactical FPS franchise, completely rebuilt on Valve's cutting-edge Source 2 engine. This competitive 5v5 shooter pits terrorists against counter-terrorists in objective-based matches where precision, teamwork, and strategy determine victory. Every weapon has realistic recoil patterns and precise hitboxes, rewarding players who invest time mastering the mechanics. The game features fully redesigned maps with dynamic smoke grenades that interact realistically with the environment, volumetric lighting that affects visibility, and responsive server-side game logic ensuring every player sees the same battlefield. Choose from classic maps like Dust II, Mirage, and Inferno, each meticulously updated with enhanced visuals while maintaining the competitive integrity players expect. The in-game economy system requires teams to manage their finances carefully, deciding when to save, force-buy, or full-buy equipment across rounds. Climb through competitive ranks from Silver to Global Elite, or enjoy casual modes including deathmatch, arms race, and community servers. With its thriving esports scene, active trading economy, and skill-based gameplay that rewards dedication, Counter-Strike 2 continues the franchise's legacy as one of gaming's most competitive experiences.",
+    "ratings": "4.4",
+    "developer": "Valve"
+  },
+    {
+    "id": "6",
+    "title": "The Finals",
+    "coverPhoto": "https://imageio.forbes.com/specials-images/imageserve/653d1491d815981e910e08d8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/2073850/THE_FINALS/",
+    "description": "The Finals is an innovative free-to-play competitive shooter that reimagines combat with fully destructible environments set within a virtual combat game show. Compete in intense 3v3v3v3 cash-out matches where four teams simultaneously battle for dominance, with the primary objective being to steal cash vaults, defend them at designated cashout stations, and secure the funds before rivals can interfere. What sets The Finals apart is its revolutionary destruction system—every wall, floor, ceiling, and structure can be demolished, allowing players to create new pathways, collapse buildings on enemies, or completely reshape the battlefield mid-combat. Choose from three contestant classes: Light builds focused on mobility and stealth with grappling hooks and cloaking devices, Medium builds offering balanced offensive capabilities with healing abilities and versatile weapons, or Heavy builds equipped with massive health pools and devastating weapons like sledgehammers and rocket launchers. Each class has unique gadgets including deployable shields, ziplines, explosive barrels, jump pads, and more. The game features spectacular environmental hazards and interactive elements like gas canisters, cars that can be thrown, and structures that react realistically to damage. Coordinate with your team to execute creative strategies, whether that means breaching through unexpected angles, collapsing the floor beneath enemies, or fortifying cashout stations with defensive gadgets. With its dynamic gameplay, spectacular destruction physics, and game-show presentation complete with commentary and leaderboards, The Finals delivers a fresh and chaotic take on competitive shooters.",
+    "ratings": "4.3",
+    "developer": "Embark Studios"
+  },
+  {
+    "id": "7",
+    "title": "Valorant",
+    "coverPhoto": "https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is Riot Games' premier competitive tactical shooter that combines precise gunplay with unique character abilities, creating a deeply strategic 5v5 experience. Choose from a diverse roster of agents, each with distinctive abilities including smokes, flashes, walls, healing, and ultimate powers that can turn the tide of rounds. Attackers must plant the Spike bomb at designated sites while defenders work to prevent detonation or defuse it in time. Every match requires perfect aim, strategic ability usage, economic management, and seamless team coordination. The game runs on Riot's proprietary engine optimized for competitive play, featuring 128-tick servers, aggressive anti-cheat measures, and netcode designed to ensure every shot registers accurately. Master a variety of weapons from sidearms to rifles and snipers, each with distinct spray patterns and damage profiles. Climb the competitive ranked ladder from Iron to Radiant, or practice in unrated matches, deathmatch, and special game modes. Regular updates introduce new agents, maps, weapon skins, and seasonal battle passes that keep the meta fresh. With its thriving professional esports scene, regular tournaments, and emphasis on competitive integrity, Valorant has become one of the most popular tactical shooters in the world.",
+    "ratings": "4.5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "8",
+    "title": "Starfield",
+    "coverPhoto": "https://cdn.wccftech.com/wp-content/uploads/2025/10/Starfield-PS5-2026.jpg",
+    "category": "RPG",
+    "downloadLink": "https://store.steampowered.com/app/1716740/Starfield/",
+    "description": "Starfield is Bethesda Game Studios' ambitious space exploration RPG that lets you journey across the stars in humanity's greatest adventure. Set in the year 2330, you play as a member of Constellation, the last group of space explorers seeking to uncover rare artifacts and unravel the mysteries of the universe. The game features over 1,000 planets across 100+ star systems, each with unique environments, flora, fauna, and resources to discover. Build and customize your own spacecraft, managing everything from weapons and shields to cargo capacity and crew quarters, then engage in thrilling space combat or peaceful exploration. On planetary surfaces, establish outposts, mine resources, research alien life, and uncover abandoned facilities filled with secrets. The robust character creation system lets you define your background, traits, and skills, shaping how you approach challenges through combat, persuasion, stealth, or technology. Join various factions including the United Colonies, Freestar Collective, Crimson Fleet pirates, or corporate entities, each offering unique questlines and philosophical perspectives. With hundreds of hours of content including main story missions, faction campaigns, side quests, base building, ship customization, and endless exploration, Starfield delivers the ultimate space RPG experience.",
+    "ratings": "4.2",
+    "developer": "Bethesda Game Studios"
+  },
+  {
+    "id": "9",
+    "title": "Marvel Rivals",
+    "coverPhoto": "https://cdn2.unrealengine.com/01-1920x1080-1920x1080-88255a697e4f.jpg",
+    "category": "Hero Shooter",
+    "downloadLink": "https://www.marvelrivals.com/",
+    "description": "Marvel Rivals is an action-packed free-to-play hero shooter that brings together iconic Marvel superheroes and villains in explosive 6v6 team battles. Choose from a growing roster of beloved characters including Spider-Man, Iron Man, Magneto, Storm, Hulk, and many more, each faithfully recreated with unique abilities, ultimate powers, and playstyles that reflect their comic book counterparts. The game features three distinct roles: Vanguard tanks who absorb damage and create space, Duelist damage dealers who eliminate enemies, and Strategist supports who heal and buff teammates. Team compositions matter significantly, with certain character combinations unlocking powerful team-up abilities that can change the course of battle. Fight across dynamic maps inspired by iconic Marvel locations, from the streets of Tokyo to the mystical realm of Asgard, each designed with multiple pathways and strategic positions. The destructible environments add tactical depth as heroes can smash through walls, create new sightlines, and alter the battlefield itself. Master intricate movement mechanics including web-slinging, flying, teleporting, and wall-running depending on your chosen hero. Progress through seasonal content, unlock cosmetic customization options, and compete in ranked modes where coordination and hero mastery determine victory. With its combination of superhero fantasy fulfillment and competitive shooter mechanics, Marvel Rivals offers thrilling gameplay for both Marvel fans and FPS enthusiasts.",
+    "ratings": "4.4",
+    "developer": "NetEase Games"
+  }
+  
+]
