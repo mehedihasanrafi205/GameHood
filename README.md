@@ -1,13 +1,13 @@
 # 🎮 [GameHood](https://gamehood-0.web.app/)
 
- **Live Website:** [gamehood-0.web.app](https://gamehood-0.web.app/)  
- **GitHub Repository:** [github.com/programming-hero-web-course2/b12-a9-firesheild-MehediHasanRafi00.git](https://github.com/programming-hero-web-course2/b12-a9-firesheild-MehediHasanRafi00.git)
+**Live Website:** [gamehood-0.web.app](https://gamehood-0.web.app/)  
+ **GitHub Repository:** [https://github.com/mehedihasanrafi205/GameHood.git](https://github.com/mehedihasanrafi205/GameHood.git)
 
 **GameHood** A Game Library — your portal to discovering indie games and supporting developers. **Browse, explore, and dive into worlds crafted by passionate creators.**
 
 ---
 
-##  Key Features
+## Key Features
 
 - Responsive Design: Fully optimized for mobile, tablet, and desktop.
 - Authentication: Secure email/password and Google login via Firebase Authentication system.
@@ -20,17 +20,17 @@
 
 ## Tech Stack
 
-| Category           | Technologies              |
-| -----------------  | ------------------------- |
-| **Frontend**       | React.js, Vite            |
-| **Styling**        | Tailwind CSS              |
-| **Data Fetching**  | Custom React Hooks        |
-| **Authentication** | Firebase                  |
-| **Animation**      | Framer Motion             |
-| **Banner Slider**  | Swiper                    |
-| **Routing**        | React Router              |
-| **Icons**          | React Icons               |
-| **Deployment**     | FireBase                  |
+| Category           | Technologies       |
+| ------------------ | ------------------ |
+| **Frontend**       | React.js, Vite     |
+| **Styling**        | Tailwind CSS       |
+| **Data Fetching**  | Custom React Hooks |
+| **Authentication** | Firebase           |
+| **Animation**      | Framer Motion      |
+| **Banner Slider**  | Swiper             |
+| **Routing**        | React Router       |
+| **Icons**          | React Icons        |
+| **Deployment**     | FireBase           |
 
 ## Project Structure
 
@@ -60,10 +60,17 @@ GameHood/
 
 ---
 
+## Screenshots
+
+**Homepage**  
+[![Homepage Screenshot](./screenshots/homepage.png)](./screenshots/homepage.png)
+
+---
+
 ## Author
 
 - Developer: Mehedi Hasan Rafi
 
 - GitHub: [MehediHasanRafi00](https://github.com/MehediHasanRafi00/)
 
-- Email: mehedihasanRafi205@gmail.com 
+- Email: mehedihasanRafi205@gmail.com
