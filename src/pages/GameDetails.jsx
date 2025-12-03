@@ -1,37 +1,42 @@
 import React, { useEffect } from "react";
-import { FaStar, FaWindows } from "react-icons/fa";
+import { FaStar, FaWindows, FaCloudDownloadAlt } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
 import { toast } from "react-toastify";
+
+// Format numbers as K/M
+const formatNumber = (num) => {
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  return num;
+};
 
 const GameDetails = () => {
   const { id } = useParams();
   const data = useLoaderData();
-  const game = data.find((g) => g.id == id);
-  // console.log(data, id, game);
+  const game = data.find((g) => g.id === id);
+
   const handleWishlistBtn = () => {
     toast.success(`${game.title} added to your wishlist!`);
   };
-  const {
-    title,
-    coverPhoto,
-    category,
-    downloadLink,
-    description,
-    ratings,
-    developer,
+
+  const { 
+    title, coverPhoto, category, downloadLink, description, ratings, developer,
+    downloads, totalReviews
   } = game;
+
   useEffect(() => {
-    document.title = `${game.title} | GameHood`;
-  }, [game.title]);
+    document.title = `${title} | GameHood`;
+  }, [title]);
+
   return (
     <section className="container mx-auto px-4 md:px-8 lg:px-0 mt-20 mb-30">
-      <title>{game.title} | GameHood</title>
+      <title>{title} | GameHood</title>
       <div className="flex justify-between items-center flex-col lg:flex-row gap-10 bg-linear-to-br rounded-2xl  from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-10  md:mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
         <figure>
           <img
             className="rounded-2xl md:min-w-xl lg:min-w-2xl bg-[#0F1724]/70 backdrop-blur-md border border-[#B8FF00]/30 shadow-lg hover:shadow-[0_0_15px_#B8FF00] transition-all duration-300 hover:scale-[1.01]"
             src={coverPhoto}
-            alt=""
+            alt={title}
           />
         </figure>
         <div className="w-full">
@@ -40,7 +45,7 @@ const GameDetails = () => {
             {category}
           </span>
           <div className="divider "></div>
-          <div className="flex justify-between">
+          <div className="flex justify-between ">
             <span className="font-medium text-gray-400">Developer</span>
             <span className="font-medium ">{developer}</span>
           </div>
@@ -51,7 +56,18 @@ const GameDetails = () => {
               <FaStar className="text-yellow-400" /> {ratings}
             </span>
           </div>
-
+          <div className="divider"></div>
+          <div className="flex justify-between">
+            <span className="font-medium text-gray-400">Downloads</span>
+            <span className="font-medium flex gap-1 items-center">
+              <FaCloudDownloadAlt className="text-green-400" /> {formatNumber(downloads)}
+            </span>
+          </div>
+          <div className="divider"></div>
+          <div className="flex justify-between">
+            <span className="font-medium text-gray-400">Total Reviews</span>
+            <span className="font-medium">{formatNumber(totalReviews)}</span>
+          </div>
           <div className="divider"></div>
           <div className="flex justify-between">
             <span className="font-medium text-gray-400">Platform</span>
@@ -59,9 +75,7 @@ const GameDetails = () => {
               <FaWindows /> Windows
             </span>
           </div>
-
           <div className="divider"></div>
-
           <div className="flex flex-row justify-between gap-3">
             <div className="w-[50%]">
               <a
@@ -92,7 +106,7 @@ const GameDetails = () => {
       </div>
       <div className="bg-linear-to-br rounded-2xl  from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-10 mt-10  md:mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
         <h2 className=" text-2xl font-bold mb-3"> System Requirements</h2>
-        <div className="flex gap-60 mt-5">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-60 mt-5">
           <div className="space-y-3">
             <h4 className="font-semibold">Minimum</h4>
             <div>

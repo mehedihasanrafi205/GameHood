@@ -31,96 +31,114 @@ const Footer = () => {
         </div>
 
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+          {/* Explore */}
           <div className="space-y-3">
             <h3 className="tracking-wide uppercase font-semibold text-[#B8FF00]">
-              Product
+              Explore
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  Features
-                </a>
+                <Link to="/" className="hover:text-[#B8FF00] transition">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  Integrations
-                </a>
+                <Link
+                  to="/all-games"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  All Games
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  Pricing
-                </a>
+                <Link
+                  to="/gaming-news"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  Gaming News
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  FAQ
-                </a>
+                <Link
+                  to="/about-us"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  About Us
+                </Link>
               </li>
             </ul>
           </div>
 
+          {/* Account */}
           <div className="space-y-3">
             <h3 className="tracking-wide uppercase font-semibold text-[#B8FF00]">
-              Company
+              Account
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  Privacy
-                </a>
+                <Link
+                  to="/my-Profile"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  My Profile
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#B8FF00] transition">
-                  Terms of Service
-                </a>
+                <Link
+                  to="/auth/login"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/auth/register"
+                  className="hover:text-[#B8FF00] transition"
+                >
+                  Register
+                </Link>
               </li>
             </ul>
           </div>
 
+          {/* Resources */}
           <div className="space-y-3">
             <h3 className="uppercase font-semibold text-[#B8FF00]">
-              Developers
+              Resources
             </h3>
             <ul className="space-y-1">
               <li>
                 <a href="#" className="hover:text-[#B8FF00] transition">
-                  Public API
+                  Help Center
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-[#B8FF00] transition">
-                  Documentation
+                  Privacy Policy
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-[#B8FF00] transition">
-                  Guides
+                  Terms & Conditions
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Social */}
           <div className="space-y-3">
             <h3 className="uppercase font-semibold text-[#B8FF00]">
               Social Media
             </h3>
             <div className="flex space-x-4 text-xl">
-              <a
-                href="#"
-                className="hover:text-[#B8FF00] transition hover:scale-110 duration-200"
-              >
+              <a href="https://www.facebook.com/" className="hover:text-[#B8FF00] transition hover:scale-110">
                 <FaFacebook />
               </a>
-              <a
-                href="#"
-                className="hover:text-[#B8FF00] transition hover:scale-110 duration-200"
-              >
-                <FaTwitter />
+              <a href="https://x.com/" className="hover:text-[#B8FF00] transition hover:scale-110">
+                <FaXTwitter />
               </a>
-              <a
-                href="#"
-                className="hover:text-[#B8FF00] transition hover:scale-110 duration-200"
-              >
+              <a href="https://www.instagram.com/" className="hover:text-[#B8FF00] transition hover:scale-110">
                 <FaInstagram />
               </a>
             </div>

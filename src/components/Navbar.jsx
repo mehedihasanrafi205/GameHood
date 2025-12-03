@@ -6,8 +6,14 @@ import { toast } from "react-toastify";
 import { Link, NavLink } from "react-router";
 
 import { RxAvatar } from "react-icons/rx";
-import { IoHomeOutline, IoInformationCircleOutline } from "react-icons/io5";
-import { CiCircleInfo } from "react-icons/ci";
+import {
+  IoGameController,
+  IoGameControllerOutline,
+  IoHomeOutline,
+  IoInformationCircleOutline,
+} from "react-icons/io5";
+import { IoLogoGameControllerA } from "react-icons/io";
+import { FaRegNewspaper } from "react-icons/fa";
 
 const Navbar = () => {
   const { Logout, user } = useContext(AuthContext);
@@ -25,28 +31,44 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/" className="hover:text-[#B8FF00] text-base font-medium">
+        <NavLink to="/" className="hover:text-[#B8FF00]  font-medium">
           <IoHomeOutline size={17} />
           Home
         </NavLink>
       </li>
-      {user && (
-        <li>
-          <NavLink
-            to="/my-Profile"
-            className="hover:text-[#B8FF00] text-base font-medium"
-          >
-            <RxAvatar size={20} /> My Profile
-          </NavLink>
-        </li>
-      )}
+
+      <li>
+        <NavLink
+          to="/all-games"
+          className="hover:text-[#B8FF00]  font-medium"
+        >
+          <IoGameControllerOutline size={20} /> All Games
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/gaming-news"
+          className="hover:text-[#B8FF00]  font-medium"
+        >
+          <FaRegNewspaper  size={21} />
+          Gaming News
+        </NavLink>
+      </li>
       <li>
         <NavLink
           to="/about-us"
-          className="hover:text-[#B8FF00] text-base font-medium"
+          className="hover:text-[#B8FF00]  font-medium"
         >
           <IoInformationCircleOutline size={21} />
           About Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/my-Profile"
+          className="hover:text-[#B8FF00]  font-medium"
+        >
+          <RxAvatar size={20} /> My Profile
         </NavLink>
       </li>
     </>
@@ -89,7 +111,7 @@ const Navbar = () => {
               src={logo}
               alt="logo"
             />
-            <span className="font-bold secondary-font text-2xl hidden md:block">
+            <span className="font-bold secondary-font text-2xl hidden xl:block">
               GameHood
               <span className="text-[#B8FF00] text-3xl">.</span>
             </span>

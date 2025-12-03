@@ -12,6 +12,8 @@ import Error404 from "../pages/Error404";
 import Loading from "../pages/Loading";
 import Profile from "../pages/Profile";
 import AppsNotFound from "../pages/AppsNotFound";
+import AllGames from "../pages/AllGAme";
+import GamingNews from "../pages/GamingNews";
 
 const router = createBrowserRouter([
   {
@@ -28,14 +30,25 @@ const router = createBrowserRouter([
       {
         path: "about-us",
         Component: AboutUs,
+        hydrateFallbackElement: <Loading />,
+        errorElement: <AppsNotFound />,
+      },
+      {
+        path: "all-games",
+        element: <AllGames></AllGames>,
+        loader: () => fetch("/data.json"),
+        hydrateFallbackElement: <Loading />,
+        errorElement: <AppsNotFound />,
+      },
+      {
+        path: "gaming-news",
+        element: <GamingNews></GamingNews>,
+        hydrateFallbackElement: <Loading />,
+        errorElement: <AppsNotFound />,
       },
       {
         path: "game-details/:id",
-        element: (
-          <PrivateRouter>
-            <GameDetails></GameDetails>
-          </PrivateRouter>
-        ),
+        element: <GameDetails></GameDetails>,
         loader: () => fetch("/data.json"),
         hydrateFallbackElement: <Loading />,
         errorElement: <AppsNotFound />,

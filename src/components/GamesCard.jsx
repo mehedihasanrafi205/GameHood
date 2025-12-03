@@ -1,7 +1,16 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaCloudDownloadAlt, FaStar } from "react-icons/fa";
 
 import { Link } from "react-router";
+
+const formatDownloads = (num) => {
+  if (num >= 1_000_000) {
+    return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  } else if (num >= 1_000) {
+    return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  }
+  return num;
+};
 
 const GameCard = ({ data }) => {
   const {
@@ -10,8 +19,9 @@ const GameCard = ({ data }) => {
     coverPhoto,
     category,
     ratings,
+    downloads,
     developer,
-    description,
+ 
     downloadLink,
   } = data;
 
@@ -27,26 +37,33 @@ const GameCard = ({ data }) => {
 
       <div className="p-4 text-[#E6F0FF] flex flex-col gap-2">
         <h2 className="text-xl font-bold tracking-wide">{title}</h2>
-        <p className="text-sm text-[#B8FF00]">{category}</p>
 
+        <div className="flex items-center justify-between">
+          <p className="text-sm opacity-60">By {developer}</p>
+          <p className="text-sm text-[#B8FF00] badge badge-soft badge-success">
+            {category}
+          </p>
+        </div>
         <div className="flex items-center justify-between">
           <p className="flex items-center gap-1 text-yellow-400">
             <FaStar className="text-yellow-400" /> {ratings}
           </p>
-          <p className="text-sm opacity-80">By {developer}</p>
+          <p className="flex items-center gap-1 text-success">
+            <FaCloudDownloadAlt /> {formatDownloads(downloads)}
+          </p>
         </div>
 
-        <p className="text-sm text-gray-300 mt-1 line-clamp-2">
-          {description.length > 80
-            ? description.slice(0, 80) + "..."
+        {/* <p className="text-sm text-gray-300 mt-1 line-clamp-2">
+          {description.length > 43
+            ? description.slice(0, 43) + "..."
             : description}
-        </p>
+        </p> */}
 
         {/* Buttons */}
         <div className="flex justify-between mt-3">
           <Link
             to={`game-details/${id}`}
-            className="border  btn btn-soft btn-success hover:bg-green-800 hover:border-green-800 text-[#B8FF00]"
+            className="border btn btn-soft btn-success hover:bg-green-800 hover:border-green-800 text-[#B8FF00]"
           >
             Details
           </Link>

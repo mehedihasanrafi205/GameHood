@@ -2,8 +2,8 @@ import React from "react";
 import Banner from "../components/Banner";
 import PopularGames from "../components/PopularGames";
 import NewsLetter from "../components/NewsLetter";
-
-
+import CategoriesSection from "../components/Categories";
+import FeaturedNews from "../components/FeaturedNews";
 
 const Home = () => {
   return (
@@ -11,8 +11,9 @@ const Home = () => {
       <title>Home | GameHood</title>
       <Banner></Banner>
       <PopularGames></PopularGames>
+      <CategoriesSection></CategoriesSection>
+      <FeaturedNews></FeaturedNews>
       <NewsLetter></NewsLetter>
-      
     </div>
   );
 };

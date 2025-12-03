@@ -12,17 +12,29 @@ const AboutUs = () => {
     <div className="container mx-auto px-4 my-10 py-5   ">
       <title>About Us | GameHood</title>
 
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="font-bold text-3xl md:text-4xl mb-10 text-center  "
-      >
-        <span className="border-b-3 border-[#B8FF00] pb-1 secondary-font">
-          About GameHood
-        </span>
-      </motion.h1>
-      <div className="divider bg-[#B8FF00]/30 h-[1px] my-5"></div>
+      <div className="mb-10">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="font-bold text-3xl md:text-4xl   text-center  "
+        >
+          <span className="border-b-3 border-[#B8FF00] pb-1 secondary-font">
+            About{" "}
+            <span className="text-[#B8FF00] secondary-font">GameHood</span>
+          </span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-[#B8FF00]/70 text-base text-center mx-auto max-w-[500px] mt-5"
+        >
+          Discover our mission, vision, and values. Learn why GameHood is the
+          ultimate destination for gamers and creators alike.
+        </motion.p>
+      </div>
+      <div className="divider bg-[#B8FF00]/30 h-px my-5"></div>
 
       <div className="bg-linear-to-br rounded-2xl  from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-5  md:mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
         <p className="text-base text-gray-400 leading-relaxed ">
@@ -54,13 +66,14 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="divider bg-[#B8FF00]/20 h-[1px] my-8"></div>
+      <div className="divider bg-[#B8FF00]/20 h-px my-8"></div>
 
-      <section className="bg-linear-to-br rounded-2xl  from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-10  md:mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
+      <section className="bg-linear-to-br rounded-2xl from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-10 md:mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
         <div className="text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-2xl font-semibold mb-10 md:text-start"
           >
@@ -68,76 +81,49 @@ const AboutUs = () => {
               Why Choose{" "}
               <span className="text-[#B8FF00]/80 secondary-font">GameHub?</span>
             </span>
-          </motion.h2> 
+          </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="bg-[#1B2433] p-6 rounded-2xl border border-[#B8FF00]/30 hover:border-[#B8FF00] hover:shadow-[0_0_20px_#B8FF00]/30 transition-all duration-300"
-            >
-              <div className="flex justify-center mb-4">
-                <FaGamepad className="text-[#B8FF00] text-3xl" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">
-                Huge Game Collection
-              </h3>
-              <p className="text-gray-400">
-                Explore a vast library of indie and popular games all in one
-                place.
-              </p>
-            </motion.div>
+            {[0, 1, 2, 3].map((index) => {
+              const icons = [FaGamepad, FaUsers, FaStar, FaShieldAlt];
+              const titles = [
+                "Huge Game Collection",
+                "Community Support",
+                "Top Rated Games",
+                "Secure & Safe",
+              ];
+              const texts = [
+                "Explore a vast library of indie and popular games all in one place.",
+                "Connect with developers and gamers who share your passion.",
+                "Discover only the best games curated based on player ratings.",
+                "Your data and game downloads are always protected and verified.",
+              ];
+              const Icon = icons[index];
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-[#1B2433] p-6 rounded-2xl border border-[#B8FF00]/30 hover:border-[#B8FF00] hover:shadow-[0_0_20px_#B8FF00]/30 transition-all duration-300"
-            >
-              <div className="flex justify-center mb-4">
-                <FaUsers className="text-[#B8FF00] text-3xl" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Community Support</h3>
-              <p className="text-gray-400">
-                Connect with developers and gamers who share your passion.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-[#1B2433] p-6 rounded-2xl border border-[#B8FF00]/30 hover:border-[#B8FF00] hover:shadow-[0_0_20px_#B8FF00]/30 transition-all duration-300"
-            >
-              <div className="flex justify-center mb-4">
-                <FaStar className="text-[#B8FF00] text-3xl" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Top Rated Games</h3>
-              <p className="text-gray-400">
-                Discover only the best games curated based on player ratings.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-[#1B2433] p-6 rounded-2xl border border-[#B8FF00]/30 hover:border-[#B8FF00] hover:shadow-[0_0_20px_#B8FF00]/30 transition-all duration-300"
-            >
-              <div className="flex justify-center mb-4">
-                <FaShieldAlt className="text-[#B8FF00] text-3xl" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Secure & Safe</h3>
-              <p className="text-gray-400">
-                Your data and game downloads are always protected and verified.
-              </p>
-            </motion.div>
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-[#1B2433] p-6 rounded-2xl border border-[#B8FF00]/30 hover:border-[#B8FF00] hover:shadow-[0_0_20px_#B8FF00]/30 transition-all duration-300"
+                >
+                  <div className="flex justify-center mb-4">
+                    <Icon className="text-[#B8FF00] text-3xl" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {titles[index]}
+                  </h3>
+                  <p className="text-gray-400">{texts[index]}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <div className="divider bg-[#B8FF00]/20 h-[1px] my-8"></div>
+      <div className="divider bg-[#B8FF00]/20 h-px my-8"></div>
 
       <div className="bg-linear-to-br rounded-2xl  from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-5 border md:mx-auto border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300">
         <motion.h3
@@ -180,7 +166,7 @@ const AboutUs = () => {
               I’m a professional in design, music, or testing. Can I collaborate
               with Gamehood?
             </div>
-            <div className="collapse-content text-sm text-gray-400 text-gray-300">
+            <div className="collapse-content text-sm  text-gray-300">
               We handle our internal development and partnerships in-house. We
               appreciate your interest and support!
             </div>
@@ -190,7 +176,7 @@ const AboutUs = () => {
             <div className="collapse-title font-semibold text-sm">
               Can I create a fan website or community for Gamehood?
             </div>
-            <div className="collapse-content text-sm text-gray-400 text-gray-300">
+            <div className="collapse-content text-sm text-gray-400 ">
               Absolutely! We love seeing fans express their creativity. Just
               follow our Fan Content Policy and keep it non-commercial.
             </div>
@@ -200,7 +186,7 @@ const AboutUs = () => {
             <div className="collapse-title font-semibold text-sm">
               Where can I play Gamehood games?
             </div>
-            <div className="collapse-content text-sm text-gray-400 text-gray-300">
+            <div className="collapse-content text-sm  text-gray-300">
               You can browse, download, and play our games directly from the
               Gamehood website or app (coming soon).
             </div>
@@ -210,7 +196,7 @@ const AboutUs = () => {
             <div className="collapse-title font-semibold text-sm">
               Can I monetize videos featuring Gamehood games?
             </div>
-            <div className="collapse-content text-sm text-gray-400 text-gray-300">
+            <div className="collapse-content text-sm  text-gray-300">
               Yes, you can create and monetize gameplay videos, reviews, and
               streams that include Gamehood content — as long as they follow our
               Fan Content Guidelines.
@@ -263,7 +249,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="divider bg-[#B8FF00]/20 h-[1px] my-8"></div>
+      <div className="divider bg-[#B8FF00]/20 h-px my-8"></div>
 
       <div className="bg-linear-to-br rounded-2xl from-[#0f0f0f] via-[#121212] to-[#191919] px-4 py-5 mx-auto border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 shadow-lg hover:shadow-[0_0_10px_#B8FF00] transition-all duration-300 flex flex-row justify-between items-center text-center md:text-start">
         <div>
