@@ -44,15 +44,15 @@ const AllGames = () => {
 
     if (sortBy === "downloads") {
       filtered.sort((a, b) => b.downloads - a.downloads);
-    } else if (sortBy === "reviews") {
-      filtered.sort((a, b) => b.totalReviews - a.totalReviews);
+    } else if (sortBy === "ratings") {
+      filtered.sort((a, b) => b.ratings - a.ratings);
     }
 
     return filtered;
   }, [games, search, sortBy]);
 
   return (
-    <section className="container mx-auto px-4 md:px-8 lg:px-0 mt-20 mb-20">
+    <section className="container mx-auto px-4 md:px-8 lg:px-0 mt-35 mb-20 ">
       {/* Header */}
       <div className="mb-20">
         <motion.h1
@@ -107,7 +107,7 @@ const AllGames = () => {
               Sort By
             </option>
             <option value="downloads">Most Downloaded</option>
-            <option value="reviews">Most Reviewed</option>
+            <option value="ratings">Most Ratings</option>
           </select>
         </div>
       </div>
@@ -115,7 +115,7 @@ const AllGames = () => {
       {/* Games Grid with Motion */}
       {filteredGames.length > 0 ? (
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 "
           variants={containerVariants}
           initial="hidden"
           animate="visible"

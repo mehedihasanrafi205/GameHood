@@ -9,7 +9,7 @@ import { FaGamepad, FaUsers, FaStar, FaShieldAlt } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto px-4 my-10 py-5   ">
+    <div className="container mx-auto px-4 mt-35 mb-20   ">
       <title>About Us | GameHood</title>
 
       <div className="mb-10">

@@ -1,26 +1,41 @@
-import React, { useContext } from "react";
-import logo from "/Gaming.png";
+import React, { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import avatar from "../assets/Image/avatar.jpg";
 import { toast } from "react-toastify";
 import { Link, NavLink } from "react-router";
 
 import { RxAvatar } from "react-icons/rx";
 import {
-  IoGameController,
   IoGameControllerOutline,
   IoHomeOutline,
   IoInformationCircleOutline,
 } from "react-icons/io5";
-import { IoLogoGameControllerA } from "react-icons/io";
 import { FaRegNewspaper } from "react-icons/fa";
+
+// Placeholder imports - replace with your actual imports
+const logo = "/Gaming.png";
+const avatar = "../assets/Image/avatar.jpg";
 
 const Navbar = () => {
   const { Logout, user } = useContext(AuthContext);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const name = user?.displayName;
   const email = user?.email;
   const photo = user?.photoURL;
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleLogout = () => {
     Logout()
@@ -31,7 +46,7 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/" className="hover:text-[#B8FF00]  font-medium">
+        <NavLink to="/" className="hover:text-[#B8FF00] font-medium">
           <IoHomeOutline size={17} />
           Home
         </NavLink>
@@ -40,7 +55,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/all-games"
-          className="hover:text-[#B8FF00]  font-medium"
+          className="hover:text-[#B8FF00] font-medium"
         >
           <IoGameControllerOutline size={20} /> All Games
         </NavLink>
@@ -48,16 +63,16 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/gaming-news"
-          className="hover:text-[#B8FF00]  font-medium"
+          className="hover:text-[#B8FF00] font-medium"
         >
-          <FaRegNewspaper  size={21} />
+          <FaRegNewspaper size={21} />
           Gaming News
         </NavLink>
       </li>
       <li>
         <NavLink
           to="/about-us"
-          className="hover:text-[#B8FF00]  font-medium"
+          className="hover:text-[#B8FF00] font-medium"
         >
           <IoInformationCircleOutline size={21} />
           About Us
@@ -66,7 +81,7 @@ const Navbar = () => {
       <li>
         <NavLink
           to="/my-Profile"
-          className="hover:text-[#B8FF00]  font-medium"
+          className="hover:text-[#B8FF00] font-medium"
         >
           <RxAvatar size={20} /> My Profile
         </NavLink>
@@ -75,7 +90,13 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="relative bg-[#0F1724]/70 backdrop-blur-md text-[#E6F0FF] shadow-md border-b border-[#B8FF00]/10 z-50">
+    <nav 
+      className={`fixed top-0 left-0 right-0 bg-[#0F1724]/70 backdrop-blur-md text-[#E6F0FF] shadow-md border-b border-[#B8FF00]/10 z-50 transition-all duration-300  ${
+        isScrolled 
+          ? "bg-[#0F1724]/90 shadow-lg shadow-[#B8FF00]/10 " 
+          : ""
+      }`}
+    >
       <div className="absolute inset-0 bg-linear-to-br from-[#B8FF00]/25 via-transparent to-[#B8FF00]/20 blur-3xl"></div>
 
       <div className="navbar container mx-auto relative z-10">
@@ -107,7 +128,7 @@ const Navbar = () => {
 
           <Link to="/" className="flex gap-2 items-center">
             <img
-              className="w-[50px] md:w-[55px] lg:w-[60px] "
+              className="w-[50px] md:w-[55px] lg:w-[60px]"
               src={logo}
               alt="logo"
             />

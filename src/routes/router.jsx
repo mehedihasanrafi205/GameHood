@@ -12,7 +12,7 @@ import Error404 from "../pages/Error404";
 import Loading from "../pages/Loading";
 import Profile from "../pages/Profile";
 import AppsNotFound from "../pages/AppsNotFound";
-import AllGames from "../pages/AllGAme";
+import AllGames from "../pages/AllGames";
 import GamingNews from "../pages/GamingNews";
 
 const router = createBrowserRouter([

@@ -26,7 +26,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-[calc(100vh-397px)] flex items-center justify-center my-15">
+    <div className="min-h-[calc(100vh-397px)] flex items-center justify-center mt-35 mb-20">
       <title>Profile | GameHood</title>
 
       <div className="w-[90%] max-w-md bg-linear-to-br from-[#0f0f0f] via-[#121212] to-[#191919] backdrop-blur-xl border border-[#B8FF00]/30 shadow-[0_0_25px_#B8FF00]/10 rounded-2xl p-8 transition-all duration-300 hover:shadow-[0_0_10px_#B8FF00]">

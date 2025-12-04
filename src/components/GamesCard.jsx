@@ -62,7 +62,7 @@ const GameCard = ({ data }) => {
         {/* Buttons */}
         <div className="flex justify-between mt-3">
           <Link
-            to={`game-details/${id}`}
+            to={`/game-details/${id}`}
             className="border btn btn-soft btn-success hover:bg-green-800 hover:border-green-800 text-[#B8FF00]"
           >
             Details

@@ -7,7 +7,7 @@ import FeaturedNews from "../components/FeaturedNews";
 
 const Home = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-10">
+    <div className="px-4 md:px-8 lg:px-10 pt-19">
       <title>Home | GameHood</title>
       <Banner></Banner>
       <PopularGames></PopularGames>

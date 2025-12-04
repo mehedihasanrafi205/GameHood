@@ -158,7 +158,7 @@ const GamingNews = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-7xl">
+    <div className="container mx-auto px-4 mt-35 mb-20 ">
       {/* Page Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
